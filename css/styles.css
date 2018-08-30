@@ -1,0 +1,121 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 940px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+#news-container div, pagination {
+    padding: 5px;
+    font-family: 'Volkhov', serif;
+}
+
+#news-container, .onenews {
+    width: 100%;
+}
+
+.news {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+}
+
+.title {
+    border: solid #CCD1D1 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+}
+
+.accordion-element {
+    width: 100%;
+}
+
+.checked {
+    background-color: #A9CCE3;
+}
+
+.accordion-element {
+    display: none;
+    overflow: hidden;
+}
+
+.refresh-button {
+    background-color: #1F618D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+       transition-duration: 0.4s;
+    border: 2px solid #1F618D;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.refresh-button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+
+.refresh-button {
+    margin: 20px;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 30px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+}
+
+.prev-page, .next-page {
+    padding: 5px 10px;
+}
+
+.current-page {
+    width: 40px;
+    text-align: center;
+}

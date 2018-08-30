@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Volkhov" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>The Guardian News</title>
+</head>
+
+<body>
+	<div class="wrapper">
+        <h1>The Guardian News</h1>
+        <section class="news">
+            <button id="refresh-button" class="refresh-button">Refresh</button>
+            <div id="news-container">
+            </div>
+        </section>
+        <section class="pagination">
+            <button class="prev-page">&#12296; Previous Page</button>
+            <div>
+                <input class="current-page" value="2" onkeydown="changePageOnUserInput()">
+                <span> of 1124 pages</span>
+            </div>
+            <button class="next-page">Next Page &#12297;</button>
+        </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
