@@ -13,7 +13,9 @@ function getPage(currentPage) {
         error: function() {
             var textnode = document.createTextNode("Sorry, we couldn't find news for you. Please try again later");
             $("#news-container").append(textnode);
-            $("#news-container" ).css("color", "red");
+            $("#news-container" ).css({"color": "red", "font-size": "24px", "text-align": "center"});
+            $(".pagination").css("display", "none");
+            $("#refresh-button").css("display", "none");
         }
     });
 }
